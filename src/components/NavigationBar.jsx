@@ -6,7 +6,7 @@ export function NavigationBar() {
   const links = [
     { title: "Ayurvedic Treatments", href: "/ayurvedic-treatment" },
     { title: "Ayurvedic Therapy & Healing", href: "/about" },
-    { title: "Panch Karma (Detox & Rejuvenation)", href: "/" },
+    { title: "Panch Karma (Detox & Rejuvenation)", href: "/panch-karma" },
   ];
   return (
     <div className="min-h-12 sticky top-0 z-50 font-medium tracking-wide bg-gray-700 text-white font-outfit">
@@ -17,6 +17,9 @@ export function NavigationBar() {
           </Link>
           <Link href="/about" className="p-3">
             About
+          </Link>
+          <Link href="/services" className="p-3">
+            Services
           </Link>
           <Dropdown links={links}>
             Treatments
