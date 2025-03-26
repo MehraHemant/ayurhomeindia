@@ -5,18 +5,18 @@ export function HeroSection() {
   return (
     <section id="hero-section" className="relative font-outfit">
       <Image
-        src={"/images/banner-bg.jpg"}
+        src={"/images/banner-2.jpg"}
         width={2000}
         height={2000}
         alt="banner"
         className="w-full -z-10 aspect-[16/6] object-cover"
       />
-      <div className="absolute text-white inset-0 bg-green-950/60 flex justify-center gap-3 pl-96  flex-col">
-        <h1 className="text-white text-3xl font-semibold uppercase">
+      <div className="absolute text-slate-100 inset-0 bg-black/20 flex justify-center gap-3 pl-60  flex-col">
+        <h1 className="text-3xl font-semibold uppercase">
           Ayurhome
         </h1>
         <span className="w-20 h-0.5 bg-white" />
-        <div className="text-white text-6xl/[1.1] uppercase max-w-2xl font-semibold">
+        <div className="text-6xl/[1.1] uppercase max-w-2xl font-semibold">
           Best Ayurvedic Treatment Centre In India
         </div>
         <h4 className="text-lg font-semibold uppercase">We care for you</h4>
