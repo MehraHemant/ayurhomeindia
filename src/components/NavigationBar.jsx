@@ -9,23 +9,23 @@ export function NavigationBar() {
     { title: "Panch Karma (Detox & Rejuvenation)", href: "/panch-karma" },
   ];
   return (
-    <div className="min-h-12 sticky top-0 z-50 font-medium tracking-wide bg-gray-700 text-white font-outfit">
+    <div className="sticky top-0 z-50 font-medium tracking-wide bg-gray-700 text-white font-outfit">
       <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
-        <div className="flex *:hover:bg-primary gap-4">
-          <Link href="/" className="p-3">
+        <div className="flex *:hover:bg-primary max-md:gap-x-1 gap-3 items-center *:py-3 *:px-2">
+          <Link href="/" className="">
             Home
           </Link>
-          <Link href="/about" className="p-3">
+          <Link href="/about" className="">
             About
           </Link>
-          <Link href="/services" className="p-3">
+          <Link href="/services" className="">
             Services
           </Link>
           <Dropdown links={links}>
             Treatments
           </Dropdown>
           {/* <Dropdown /> */}
-          <Link href="/" className="p-3">
+          <Link href="/" className="">
             Contact us
           </Link>
         </div>

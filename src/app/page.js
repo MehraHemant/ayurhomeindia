@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection />
-      <section className="my-16 mx-auto max-w-6xl gap-5 flex flex-col text-center">
-        <h2 className="text-4xl font-semibold font-outfit">
+      <section className="my-16 max-md:my-8 mx-auto max-w-6xl gap-5 flex flex-col text-center px-6 max-sm:px-2">
+        <h2 className="text-4xl font-semibold font-outfit max-md:text-2xl max-lg:text-3xl">
           Welcome to Ayurhome Ayurvedic Treatment Centre
         </h2>
-        <p className="text-lg/snug text-gray-700 font-extralight font-outfit">
+        <p className="text-lg/snug text-gray-700 font-extralight font-outfit max-sm:text-base/snug">
           At Ayuryoga Ayurveda Treatment Centre, we proudly uphold a legacy
           spanning over a century in healthcare and Ayurvedic medicine in India.
           Our esteemed journey began with the renowned Ayurvedic Doctor, Late
@@ -26,7 +26,7 @@ export default function Home() {
           traditional Ayurvedic practices has established us as a trusted name
           in the industry.
         </p>
-        <p className="text-lg/snug text-gray-700 font-extralight font-outfit">
+        <p className="text-lg/snug text-gray-700 font-extralight font-outfit max-sm:text-base/snug">
           Our state-of-the-art Herbal Museum houses an extensive collection of
           900 medicinal herbs, each carefully curated for their efficacy in
           treating chronic diseases and sexual disorders. This unique repository
@@ -35,7 +35,7 @@ export default function Home() {
           power of Ayurveda at Ayuryoga Ayurveda Treatment Centre.
         </p>
       </section>
-      <div className="grid grid-cols-4 max-w-7xl gap-6 w-full mx-auto">
+      <div className="grid grid-cols-4 max-lg:grid-cols-2 *:mx-auto max-sm:px-2 px-6 max-w-7xl gap-6 max-md:gap-2 w-full mx-auto">
         {[
           {
             img: "/images/thinking.png",
@@ -74,7 +74,7 @@ export default function Home() {
           />
         ))}
       </div>
-      <div className="w-full py-10 bg-black/20 relative my-20">
+      <div className="w-full py-10 bg-black/20 relative mt-20">
         <Image
           className="w-full h-full absolute left-0 top-0 -z-10 object-cover"
           src="/images/banner.jpg"
@@ -82,7 +82,7 @@ export default function Home() {
           height={20000}
           alt="counter"
         />
-        <div className="flex justify-between max-w-7xl mx-auto">
+        <div className="flex justify-between max-w-7xl mx-auto max-md:hidden">
           {[
             { title: "5000+", subtitle: "Happy Customers" },
             { title: "5+", subtitle: "Ayurvedic Doctor" },
@@ -93,7 +93,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <section className=" relative font-outfit z-0 text-left py-10">
+      <section className=" relative font-outfit z-0 text-left">
         <div className="absolute h-full w-full -z-10">
           <Image
             src="/images/ayurveda.png"
@@ -103,11 +103,11 @@ export default function Home() {
             height={2000}
           />
         </div>
-        <div className="my-16 mx-auto max-w-6xl gap-3 flex flex-col ">
+        <div className="py-16 max-md:py-6 max-md:mt-4 mx-auto max-w-6xl gap-3 flex flex-col ">
           <h2 className="text-4xl font-semibold text-center">Ayuryoga</h2>
           <span className="w-28 h-0.5 bg-black mx-auto mb-3" />
 
-          <div className="flex gap-6">
+          <div className="flex gap-6 max-md:flex-col-reverse px-2">
             <div className="flex flex-col gap-3 text-lg/snug text-gray-700 tracking-tight font-extralight">
               <p className="text-xl font-medium">
                 Leading Ayurvedic Treatments in India for Over a Century
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
             <Image
               src="/images/our_vision.webp"
-              className="max-w-md object-cover"
+              className="max-w-md max-md:max-w-full object-cover"
               alt="img"
               width={2000}
               height={2000}
@@ -148,8 +148,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" relative font-outfit z-0 text-left py-10">
-        <div className="absolute h-full w-full -z-10">
+      <section className=" relative font-outfit z-0 text-left">
+        {/* <div className="absolute h-full w-full -z-10">
           <Image
             src="/images/542.jpg"
             className="w-full h-full opacity-20 object-cover"
@@ -157,11 +157,11 @@ export default function Home() {
             width={2000}
             height={2000}
           />
-        </div>
-        <div className="my-16 mx-auto max-w-6xl gap-3 flex flex-col ">
+        </div> */}
+        <div className="mx-auto max-w-6xl gap-3 flex flex-col py-16 max-md:py-6">
           <h2 className="text-4xl font-semibold text-center">Our Vision</h2>
           <span className="w-28 h-0.5 bg-black mx-auto mb-3" />
-          <div className="flex gap-6 flex-row-reverse">
+          <div className="flex gap-6 flex-row-reverse px-2 max-md:flex-col-reverse">
             <div className="flex flex-col gap-3 text-lg/snug text-gray-700 tracking-tight font-extralight">
               <p className="text-xl font-medium">
                 Bringing Ayurveda to Every Life
@@ -196,7 +196,7 @@ export default function Home() {
             </div>
             <Image
               src="/images/banner-2.jpg"
-              className="max-w-md object-cover"
+              className="max-w-md max-md:max-w-full object-cover"
               alt="img"
               width={2000}
               height={2000}
