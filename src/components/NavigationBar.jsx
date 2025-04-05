@@ -9,7 +9,7 @@ export function NavigationBar() {
     { title: "Panch Karma (Detox & Rejuvenation)", href: "/panch-karma" },
   ];
   return (
-    <div className="sticky top-0 z-50 font-medium tracking-wide bg-gray-700 text-white font-outfit">
+    <div className="sticky top-0 z-50 font-medium tracking-wide bg-gray-700 text-white font-poppins">
       <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
         <div className="flex *:hover:bg-primary max-md:gap-x-1 gap-3 items-center *:py-3 *:px-2">
           <Link href="/" className="">

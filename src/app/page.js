@@ -6,6 +6,7 @@ import {
   Card,
   TransitionCards,
   BookingForm,
+  Heading,
 } from "@/components";
 import Image from "next/image";
 
@@ -13,11 +14,9 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection />
-      <section className="my-16 max-md:my-8 mx-auto max-w-6xl gap-5 flex flex-col text-center px-6 max-sm:px-2">
-        <h2 className="text-4xl font-semibold font-outfit max-md:text-2xl max-lg:text-3xl">
-          Welcome to Ayurhome Ayurvedic Treatment Centre
-        </h2>
-        <p className="text-lg/snug text-gray-700 font-extralight font-outfit max-sm:text-base/snug">
+      <section className="my-16 max-md:my-8 mx-auto max-w-7xl gap-5 flex flex-col text-center px-6 max-sm:px-2">
+        <Heading>Welcome to Ayurhome Ayurvedic Treatment Centre</Heading>
+        <p className="text-base text-gray-700 font-poppins">
           At Ayuryoga Ayurveda Treatment Centre, we proudly uphold a legacy
           spanning over a century in healthcare and Ayurvedic medicine in India.
           Our esteemed journey began with the renowned Ayurvedic Doctor, Late
@@ -26,7 +25,7 @@ export default function Home() {
           traditional Ayurvedic practices has established us as a trusted name
           in the industry.
         </p>
-        <p className="text-lg/snug text-gray-700 font-extralight font-outfit max-sm:text-base/snug">
+        <p className="text-base text-gray-700 font-poppins">
           Our state-of-the-art Herbal Museum houses an extensive collection of
           900 medicinal herbs, each carefully curated for their efficacy in
           treating chronic diseases and sexual disorders. This unique repository
@@ -93,7 +92,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <section className=" relative font-outfit z-0 text-left">
+      <section className=" relative font-poppins z-0 text-left">
         <div className="absolute h-full w-full -z-10">
           <Image
             src="/images/ayurveda.png"
@@ -103,15 +102,17 @@ export default function Home() {
             height={2000}
           />
         </div>
-        <div className="py-16 max-md:py-6 max-md:mt-4 mx-auto max-w-6xl gap-3 flex flex-col ">
-          <h2 className="text-4xl font-semibold text-center">Ayuryoga</h2>
+        <div className="py-16 max-md:py-6 max-md:mt-4 mx-auto max-w-7xl gap-3 flex flex-col ">
+          <Heading>
+            <h2 className="text-4xl font-semibold text-center">Ayuryoga</h2>
+          </Heading>
           <span className="w-28 h-0.5 bg-black mx-auto mb-3" />
 
           <div className="flex gap-6 max-md:flex-col-reverse px-2">
-            <div className="flex flex-col gap-3 text-lg/snug text-gray-700 tracking-tight font-extralight">
-              <p className="text-xl font-medium">
+            <div className="flex flex-col gap-3 text-base text-gray-700">
+              <Heading className="text-xl text-left font-semibold text-heading">
                 Leading Ayurvedic Treatments in India for Over a Century
-              </p>
+              </Heading>
               <p>
                 For over 100 years, Ayuryoga has been at the forefront of
                 Ayurveda, providing holistic healing and wellness solutions
@@ -148,7 +149,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" relative font-outfit z-0 text-left">
+      <section className=" relative font-poppins z-0 text-left">
         {/* <div className="absolute h-full w-full -z-10">
           <Image
             src="/images/542.jpg"
@@ -158,14 +159,16 @@ export default function Home() {
             height={2000}
           />
         </div> */}
-        <div className="mx-auto max-w-6xl gap-3 flex flex-col py-16 max-md:py-6">
-          <h2 className="text-4xl font-semibold text-center">Our Vision</h2>
+        <div className="mx-auto max-w-7xl gap-3 flex flex-col py-16 max-md:py-6">
+          <Heading>
+            <h2 className="text-4xl font-semibold text-center">Our Vision</h2>
+          </Heading>
           <span className="w-28 h-0.5 bg-black mx-auto mb-3" />
           <div className="flex gap-6 flex-row-reverse px-2 max-md:flex-col-reverse">
-            <div className="flex flex-col gap-3 text-lg/snug text-gray-700 tracking-tight font-extralight">
-              <p className="text-xl font-medium">
+            <div className="flex flex-col gap-3 text-base text-gray-700">
+              <Heading className="text-xl text-left font-semibold text-heading">
                 Bringing Ayurveda to Every Life
-              </p>
+              </Heading>
               <p>
                 At AyurHomeIndia, our vision is to make Ayurveda an integral
                 part of every individual’s life, fostering physical, mental, and

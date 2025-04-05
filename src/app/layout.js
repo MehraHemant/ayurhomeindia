@@ -1,4 +1,4 @@
-import { Header, NavigationBar } from "@/components";
+import { Footer, Header, NavigationBar } from "@/components";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
@@ -8,6 +8,7 @@ export default function RootLayout({ children }) {
         <Header />
         <NavigationBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

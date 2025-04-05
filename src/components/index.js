@@ -4,3 +4,4 @@ export { NavigationBar } from "./NavigationBar";
 export { HeroSection } from "./HeroSection";
 export { BookingForm } from "./BookingForm";
 export { Cards } from "./cards";
+export { Footer } from "./Footer";

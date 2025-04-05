@@ -4,7 +4,7 @@ import { Button } from "./ui";
 
 export function Header() {
   return (
-    <section className="font-outfit mx-2">
+    <section className="font-poppins mx-2">
       <div className="max-w-5xl mx-auto w-full items-center flex justify-between py-3">
         <span className="text-4xl max-sm:text-xl font-semibold text-center font-sans">
           Aayur Home

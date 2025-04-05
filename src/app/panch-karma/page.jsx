@@ -37,8 +37,8 @@ const benefits = [
 export default function page() {
   const pathname = usePathname();
   return (
-    <div className="font-outfit">
-      <div className="font-outfit relative bg-black/50  w-full aspect-[8/1]">
+    <div className="font-poppins">
+      <div className="font-poppins relative bg-black/50  w-full aspect-[8/1]">
         <Image
           src="/images/redirect-banner.webp"
           alt="redirect banner"

@@ -14,7 +14,7 @@ export function BookingForm() {
         />
       </div>
       <div className="py-16">
-        <div className="max-w-2xl font-outfit mx-auto relative p-6 rounded-2xl shadow-xl w-full ">
+        <div className="max-w-2xl font-poppins mx-auto relative p-6 rounded-2xl shadow-xl w-full ">
           <div className="absolute top-0 left-0 w-full h-2 bg-primary rounded-t-2xl" />
           <form className="flex flex-col gap-6 my-6 *:text-lg">
             <input
